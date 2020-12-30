@@ -1,0 +1,527 @@
+/* COMMON */
+section {
+    padding: 30px 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    padding-top: 70px;
+}
+
+.black {
+    color: black;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    border-radius: 8px;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.btn-white {
+    background-color: white;
+    border: 2px solid #808080;
+}
+
+.container {
+    padding: 0px 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.green {
+    color: #007536;
+}
+
+.heading {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007536 !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.light-green-bg {
+    background-color: #CEE1D3;
+}
+
+.link {
+    font-weight: bold;
+}
+
+/* NAVBAR */
+
+nav {
+    height: 70px;
+    width: 100%;
+    padding: 0 15px;
+    
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 99;
+}
+
+nav .container {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .company-logo {
+    height: 40px;
+    display: block;
+}
+
+nav i {
+    font-size: 28px;
+}
+
+nav .cart-icon {
+    margin-left: 20px;
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+    height: 600px;
+    position: relative;
+}
+
+.jumbotron .jumbotron-background {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: right top;
+}
+
+.jumbotron .container {
+    display: flex;
+    justify-content: center;
+}
+
+.jumbotron .wrap {
+    text-align: center;
+    border-radius: 3px;
+    margin: 0 20px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    max-width: 400px;
+    transform: translateY(-50%);
+}
+
+.jumbotron .delivery{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jumbotron .delivery .title{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.jumbotron .delivery .description{
+    margin-bottom: 10px;
+}
+
+.jumbotron .delivery .search-box {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+}
+
+.jumbotron .delivery .cap-input{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    font-size: 16px;
+    width: 100%;
+    border: 2px solid #808080;
+    border-radius: 8px;
+}
+
+.jumbotron .delivery .search-icon {
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+.jumbotron .delivery .note {
+    font-size: 12px;
+}
+
+/* HOW IT WORKS SECTION */
+
+.instructions {
+    text-align: center;
+}
+
+.instructions .card-container {
+    padding: 50px 30px 0px;
+}
+
+.instructions .card-container .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instructions .icon {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.instructions .text {
+    font-size: 18px;
+}
+
+.instructions .link {
+    display: inline-block;
+    padding-top:30px;
+}
+
+
+/* STRENGTHS SECTION */
+
+.strengths {
+    text-align: center;
+}
+
+.strengths .card {
+    padding: 40px 50px;
+}
+
+.strengths .dot {
+    font-size: 12px;
+    margin: 10px 1px;
+}
+
+.strengths .link {
+    display: inline-block;
+    padding-top: 30px;
+}
+
+/* PRESS SECTION */
+
+.press {
+    text-align: center;
+}
+
+.press .images-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.press .img-container {
+    max-height: 200px;
+}
+
+.press .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* REVIEWS SECTION */
+
+.reviews .review-container {
+    padding: 10px 10px;
+}
+
+.reviews .review-card {
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #808080;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.reviews .review-card div:nth-child(-n + 2) {
+    margin-bottom: 15px;
+}
+
+.reviews .review-card .title {
+    font-weight: bold;
+}
+
+.reviews .review-card .stars {
+    color: #ffe058
+}
+
+/* FAQ SECTION */
+
+.faq .question {
+    padding: 15px 0;
+}
+
+.faq .question .title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* NEW SHOP SECTION */
+
+.new-shop .btn {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* ================================== */
+
+/* MERCHANT PAGE */
+
+/* SHOP INFO SECTION */
+
+.shop-header .carousel {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    max-height: 300px;
+}
+
+.shop-header .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: none;
+}
+
+.shop-header .carousel img.active {
+    display: block;
+}
+
+.shop-header .carousel .carousel-navigation {
+    padding: 5px;
+    position: absolute;
+    bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.581);
+    border-radius: 30px;
+}
+
+.carousel i {
+    margin: 0 10px;
+}
+.carousel i.active {
+    color: #007536;
+}
+
+.shop-header .shop-info {
+    padding-top: 20px;
+}
+
+.shop-header .details {
+    font-size: 16px;
+}
+
+.shop-header .name,
+.shop-header .details {
+    margin-bottom: 20px;
+}
+
+/* SHELVES SECTION */
+
+.shelves {
+    padding-bottom: 0;
+}
+
+.shelves .title {
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+}
+
+.shelves .title .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shelves .title .control-arrow {
+    font-size: 42px;
+}
+
+.shelves .product .name {
+    font-weight: bold;
+    margin: 30px 0 20px;
+}
+
+.shelves .product .ingredients {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.shelves .product .price {
+    margin-bottom: 20px;
+}
+
+.shelves .product .original-price {
+    text-decoration: line-through;
+}
+
+.shelves .product .current-price {
+    font-weight: bold;
+}
+
+.shelves .product .controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.shelves .product .controls i {
+    font-size: 26px;
+}
+
+.shelves .product .controls i:active {
+    transform: scale(0.9);
+}
+
+.shelves .product .controls .product-quantity {
+    margin: 0 15px;
+    padding: 5px;
+    font-size: 25px;
+    width: 50px;
+    border: 2px solid #808080;
+    border-radius: 3px;
+}
+
+/* INFO SECTION */
+
+.info {
+    padding: 20px 0;
+}
+
+.info .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 576px) {
+
+    .sm {
+        width: 50%;
+    }
+
+    /* .press .img-container {
+        width: 50%;
+    } */
+
+    /* .reviews .review-container {
+        width: 50%;
+    } */
+
+    /* .instructions .card-container {
+        width: 50%;
+    } */
+}
+
+@media only screen and (min-width: 768px) {
+    .jumbotron .wrap {
+        left: 20%;
+    }
+    .strengths .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .strengths .img-wrapper {
+        width: 40%;
+    }
+
+    .strengths .img-wrapper img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .strengths .strength-container {
+        width: 50%;
+    } 
+
+    .strengths .card {
+        padding: 40px 0;
+    }
+
+    .strengths .desktop {
+        display: block;
+    }
+
+    .strengths .mobile {
+        display: none;
+    }
+
+    .strengths .box {
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .md {
+        width: 25%;
+    }
+
+    /* .press .img-container {
+        width: 25%;
+    } */
+
+    /* .reviews .review-container {
+        width: 25%;
+    } */
+
+    /* .strengths .strength-container {
+        width: 25%;
+    } */
+
+    /* .instructions .card-container {
+        width: 25%;
+    } */
+}
+
+@media only screen and (max-width: 767px) {
+    .strengths .mobile {
+        display: block;
+    }
+
+    .strengths .desktop {
+        display: none;
+    }
+}

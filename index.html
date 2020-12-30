@@ -10,6 +10,7 @@
     <!-- Document title -->
     <title>DAJE | Home Page</title>
     <!-- Stylesheets & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link href="css/index.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -17,7 +18,204 @@
 </head>
 
 <body>
-    <!-- Write here the html page content -->
+    <header>
+        <!-- NAVBAR  -->
+        <nav>
+            <div class="container">
+                <div class="left">
+                <img class="company-logo" src="images/logo.png" alt="daje-logo">
+                </div>
+                <div class="right">
+                    <i class="user-icon fas fa-user"></i>
+                    <i class="cart-icon fas fa-shopping-cart green"></i>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- JUMBOTRON  -->
+        <div class="jumbotron">
+            <div class="container">
+                <div class="wrap">
+                    <div class="delivery">
+                        <h1 class="title">La spesa online dai piccoli negozi di quartiere direttamente a casa tua</h1>
+                        <p class="description">Ricevi a casa tua, in meno di 24 ore, prodotti dai negozi locali che ami in un unico ordine.</p>
+                        <div class="search-box">
+                            <i class="search-icon green fas fa-search"></i>
+                            <input class="cap-input" type="number" min="0" placeholder="Inserisci il tuo CAP per la consegna">
+                        </div>
+                        <p>
+                            <small class="note">Verifica la copertura del servizio nella tua zona</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img class="jumbotron-background" src="images/home-hero.png" alt="home-image"> 
+        </div>
+    </header>
+    <main>
+        <!-- HOW IT WORKS SECTION  -->
+        <section class="instructions">
+            <div class="container">
+                <h2 class="heading">Come funziona?</h2>
+            <div>
+                <div class="box">
+                    <div class="card-container sm md">
+                    <div class="card">
+                        <i class="icon fas fa-map-marker-alt"></i>
+                        <p class="text">Scegli il tuo CAP e visita i negozi</p>
+                    </div>
+                    </div>
+                    <div class="card-container sm md">
+                        <div class="card">
+                            <i class="icon fas fa-users"></i>
+                            <p class="text">Ordina prodotti da tutti i negozi che vuoi</p>
+                        </div>
+                    </div>
+                    <div class="card-container sm md">
+                        <div class="card">
+                            <i class="icon fas fa-shopping-bag"></i>
+                            <p class="text">Ricevili a casa tua con un'unica spedizione</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="green link" href="#link">Leggi le recensioni e le domande comuni</a>
+            </div>
+        </section>
+        <!-- STRENGTHS SECTION  -->
+        <section class="strengths light-green-bg">
+            <div class="container">
+                <h2 class="heading">Perche scegliere DAJE?</h2>
+                <div class="content">
+                    <div class="img-wrapper desktop">
+                        <img src="images/home-section.jpeg" alt="man-ham-picture">
+                    </div>
+                    <div class="box">
+                        <div class="strength-container md">
+                            <div class="card">
+                            <i class="dot fas fa-circle"></i>
+                            <p>Acquista dai tuoi negozianti di fiducia</p>
+                            </div>
+                        </div>
+                        <div class="strength-container md">
+                            <div class="card">
+                            <i class="dot fas fa-circle"></i>
+                            <i class="dot fas fa-circle"></i>
+                            <p>Ricevi prodotti freschi e di qualità</p>
+                        </div>
+                        </div>
+                        <div class="strength-container md">
+                            <div class="card">
+                            <i class="dot fas fa-circle"></i>
+                            <i class="dot fas fa-circle"></i>
+                            <i class="dot fas fa-circle"></i>
+                            <p>Supporta i tesori del tuo quartiere</p>
+                            </div>
+                        </div>
+                        <a class="black link desktop" href="#link">Scopri di più sui benefici del fare la tua spesa con DAJE</a> 
+                    </div>
+                    <a class="black link mobile" href="#link">Scopri di più sui benefici del fare la tua spesa con DAJE</a>
+                </div>
+            </div>
+        </section>
+        <!-- PRESS SECTION  -->
+        <section class="press">
+            <div class="container">
+                <h2 class="heading">Potresti aver visto DAJE su</h2>
+                <div class="images-box">
+                    <div class="img-container sm md">
+                        <img src="images/logo-corriere-della-sera.png" alt="logo-corriere-della-sera">
+                    </div>
+                    <div class="img-container sm md">
+                        <img src="images/logo-il-sole-24-ore.png" alt="logo-il-sole-24-ore">
+                    </div>
+                    <div class="img-container sm md">
+                        <img src="images/logo-millionaire.png" alt="logo-millionaire">
+                    </div>
+                    <div class="img-container sm md">
+                        <img src="images/logo-rai-news.png" alt="logo-rai-news">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- REVIEWS SECTION  -->
+        <section class="reviews light-green-bg">
+            <div class="container">
+                <h2 class="heading">Cosa ne pensano le persone</h2>
+                <div class="box">
+                    <div class="review-container sm md">
+                    <div class="review-card">
+                        <div class="title">Chiara</div>
+                        <div class="body">"Servizio impeccabile, spesa arrivata in giornata. In questo momento, una vera e propria salvezza."</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                    <div class="review-container sm md">
+                    <div class="review-card">
+                        <div class="title">Ettore</div>
+                        <div class="body">"Sito internet molto intuitivo e facile da consultare. Servizio veloce e prodotti buoni. Assistenza clienti impeccabile. Davvero ottimo!"</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                    <div class="review-container sm md">
+                        <div class="review-card">
+                            <div class="title">Lorena</div>
+                            <div class="body">"Servizio comodo, preciso e prodotti di qualità, lo consiglio vivamente."</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ SECTION  -->
+        <section class="faq">
+            <div class="container">
+                <h2 class="heading">Domande Frequenti</h2>
+                <div class="question">
+                    <div class="title">Come funziona la consegna?</div>
+                    <div class="body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum id iure sed quas veniam est necessitatibus molestiae, magni dolore assumenda ea, debitis minima nulla. <a class="black link" href="#link">Link</a></div>
+                </div>
+                <div class="question">
+                    <div class="title">Dove è attivo il servizio?</div>
+                    <div class="body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum id iure sed quas veniam est necessitatibus molestiae, magni dolore assumenda ea, debitis minima nulla. <a class="black link" href="#link">Link</a></div>
+                </div>
+                <div class="question">
+                    <div class="title">Quanto costa il servizio?</div>
+                    <div class="body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum id iure sed quas veniam est necessitatibus molestiae, magni dolore assumenda ea, debitis minima nulla.</div>
+                </div>
+                <div class="question">
+                    <div class="title">Se qualcosa non va con il mio ordine?</div>
+                    <div class="body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum id iure sed quas veniam est necessitatibus molestiae, magni dolore assumenda ea, debitis minima nulla.</div>
+                </div>
+                <a class="black link" href="#link">Hai altre domande? Clicca qui per contattarci: saremo subito da te!</a>
+            </div>
+        </section>
+        <!-- NEW SHOP SECTION  -->
+        <section class="new-shop light-green-bg">
+            <div class="container">
+                <h2 class="title heading">Hai un negozio?</h2>
+                <p>La nostra missione è quella di riuscire a connettere le persone con i negozi del proprio quartiere. Se hai un negozio e vuoi unirti a Daje, o se vuoi solamente richiedere informazioni in merito al funzionamento del servizio, contattaci e saremo felici di spiegarti tutto.</p>
+                <a class="btn btn-white black" href="#link">Contattaci</a>
+            </div>
+        </section>
+    </main>
 </body>
-
 </html>

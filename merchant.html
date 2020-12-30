@@ -10,6 +10,7 @@
     <!-- Document title -->
     <title>DAJE | Merchant Page</title>
     <!-- Stylesheets & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link href="css/index.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -17,7 +18,190 @@
 </head>
 
 <body>
-    <!-- Write here the html page content -->
+    <header>
+        <!-- NAVBAR  -->
+        <nav>
+            <div class="container">
+                <div class="left">
+                <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="right">
+                    <i class="user-icon fas fa-user"></i>
+                    <i class="cart-icon fas fa-shopping-cart green"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- SHOP INFO SECTION  -->
+        <div class="shop-header">
+            <div class="container">
+                <div class="carousel">
+                    <div class="images">
+                        <img class="active first" src="images/merchant-carousel-1.png" alt="merchant-carousel-1">
+                        <img src="images/merchant-carousel-2.png" alt="merchant-carousel-2">
+                        <img src="images/merchant-carousel-3.png" alt="merchant-carousel-3">
+                        <img class="last" src="images/merchant-carousel-4.png" alt="merchant-carousel-4">
+                    </div>
+                    <div class="carousel-navigation">
+                        <i class="active first fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="last fas fa-circle"></i>
+                    </div>
+                </div>
+                <div class="shop-info">
+                    <h2 class="name">
+                    Gianfranco e Antonella
+                    </h2>
+                    <div class="details">
+                        <p class="address">Mercato San Giovanni di Dio - Box 71</p>
+                        <p class="phone-number">333 333 3333</p>
+                    </div>
+                    <div class="description">
+                        Tantissimi prodotti di qualità, da tantissimi anni al mercato San Giovanni di Dio. Abbiamo prodotti di Castelluccio di Norcia per le nostre origini e per promuovere i prodotti dei paesi terremotati. Siamo in contatto in modo diretto con tantissime aziende del posto.
+                    </div>
+                </div>
+            </div>
+        <div>
+        <!-- SHELVES SECTION  -->
+        <section class="shelves">
+            <div class="list">
+                <div class="title light-green-bg">
+                    <div class="container">
+                        <h3>Offerte (2)</h3>
+                        <i class="control-arrow open fas fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="product">
+                        <div class="name">Composta Sibilla di Norcia di Albicocca senza zucchero - Vasetto da 350 gr</div>
+                        <div class="ingredients">Ingredienti: Albicocche* 70%, concentrato di mele, gelificante: pectina, correttore di acidità: acido citrico. *Da agricoltura biologica</div>
+                        <div class="price"><span class="original-price">€5,73</span> <span class="current-price green">€4,50</span> l'uno</div>
+                        <div class="controls">
+                            <i class="add-product fas fa-plus-circle"></i>
+                            <input class="product-quantity" oninput="validity.valid||(value='');" type="number" min="0" placeholder="0">
+                            <i class="remove-product fas fa-minus-circle"></i>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="name">Formaggio di pecora - Valle del Sole - Porzione da 500g</div>
+                        <div class="price"><span class="original-price">€6,84</span> <span class="current-price green">€5,10</span> a porzione</div>
+                        <div class="controls">
+                            <i class="add-product fas fa-plus-circle"></i>
+                            <input class="product-quantity" oninput="validity.valid||(value='');" type="number" min="0" placeholder="0">
+                            <i class="remove-product fas fa-minus-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="title light-green-bg">
+                    <div class="container">
+                        <h3>Confetture (3)</h3>
+                        <i class="control-arrow open fas fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="product">
+                        <div class="name">Composta Sibilla di Norcia di Prugne senza zucchero - Vasetto da 350 gr</div>
+                        <div class="ingredients">Ingredienti: Prugne* 70%, concentrato di mele, gelificante: pectina, correttore di acidità: acido citrico. *Da agricoltura biologica</div>
+                        <div class="price"><span class="current-price green">€5,73</span> l'uno</div>
+                        <div class="controls">
+                            <i class="add-product fas fa-plus-circle"></i>
+                            <input class="product-quantity" oninput="validity.valid||(value='');" type="number" min="0" placeholder="0">
+                            <i class="remove-product fas fa-minus-circle"></i>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="name">Composta Sibilla di Norcia di Pesche senza zucchero - Vasetto da 350 gr</div>
+                        <div class="ingredients">Ingredienti: Pesche* 70%, concentrato di mele, gelificante: pectina, correttore di acidità: acido citrico. *Da agricoltura biologica</div>
+                        <div class="price"><span class="current-price green">€5,73</span> l'uno</div>
+                        <div class="controls">
+                            <i class="add-product fas fa-plus-circle"></i>
+                            <input class="product-quantity" oninput="validity.valid||(value='');" type="number" min="0" placeholder="0">
+                            <i class="remove-product fas fa-minus-circle"></i>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="name">Composta Sibilla di Norcia di Fragole senza zucchero - Vasetto da 350 gr</div>
+                        <div class="ingredients">Ingredienti: Fragole* 70%, concentrato di mele, gelificante: pectina, correttore di acidità: acido citrico. *Da agricoltura biologica</div>
+                        <div class="price"><span class="current-price green">€5,73</span> l'uno</div>
+                        <div class="controls">
+                            <i class="add-product fas fa-plus-circle"></i>
+                            <input class="product-quantity" oninput="validity.valid||(value='');" type="number" min="0" placeholder="0">
+                            <i class="remove-product fas fa-minus-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="title light-green-bg">
+                    <div class="container">
+                        <h3>Lenticchie (5)</h3>
+                        <i class="control-arrow open fas fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="product">
+                        <div class="name">Lenticchia di San Benedetto (Norcia) - Confezione da 500 gr</div>
+                        <div class="price"><span class="current-price green">€4,46</span> al pezzo</div>
+                        <div class="controls">
+                            <i class="add-product fas fa-plus-circle"></i>
+                            <input class="product-quantity" oninput="validity.valid||(value='');" type="number" min="0" placeholder="0">
+                            <i class="remove-product fas fa-minus-circle"></i>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="name">Lenticchia I.G.P. di Castelluccio - Confezione da 500 gr</div>
+                        <div class="price"><span class="current-price green">€6,79</span> al pezzo</div>
+                        <div class="controls">
+                            <i class="add-product fas fa-plus-circle"></i>
+                            <input class="product-quantity" oninput="validity.valid||(value='');" type="number" min="0" placeholder="0">
+                            <i class="remove-product fas fa-minus-circle"></i>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="name">Lenticchia Rossa decorticata - Confezione da 500 gr</div>
+                        <div class="price"><span class="current-price green">€4,77</span> al pezzo</div>
+                        <div class="controls">
+                            <i class="add-product fas fa-plus-circle"></i>
+                            <input class="product-quantity" oninput="validity.valid||(value='');" type="number" min="0" placeholder="0">
+                            <i class="remove-product fas fa-minus-circle"></i>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="name">Lenticchia in vetro - Confezione da 400 gr</div>
+                        <div class="price"><span class="current-price green">€1,27</span> al pezzo</div>
+                        <div class="controls">
+                            <i class="add-product fas fa-plus-circle"></i>
+                            <input class="product-quantity" oninput="validity.valid||(value='');" type="number" min="0" placeholder="0">
+                            <i class="remove-product fas fa-minus-circle"></i>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="name">Lenticchia Pomilia - Confezione da 400 gr</div>
+                        <div class="price"><span class="current-price green">€1,27</span> al pezzo</div>
+                        <div class="controls">
+                            <i class="add-product fas fa-plus-circle"></i>
+                            <input class="product-quantity" oninput="validity.valid||(value='');" type="number" min="0" placeholder="0">
+                            <i class="remove-product fas fa-minus-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- INFO SECTION  -->
+        <section class="info light-green-bg">
+            <div class="container">
+                <div class="title">
+                Hai domande, dubbi, o curiosità?
+                </div>
+                <div class="body">
+                    Faccelo sapere! Chiamaci al numero 333 333 33 33
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
-
 </html>
